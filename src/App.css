@@ -1,0 +1,93 @@
+.App {
+  text-align: center;
+  background-color: rgb(235, 94, 40);
+}
+.app {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 80%;
+  grid-template-areas:
+    "header"
+    "container";
+  background-color: rgb(235, 94, 40);
+}
+label {
+  font-size: 16px;
+  font-weight: bolder;
+}
+select {
+  border: 0px;
+  font-size: 16px;
+  font-weight: bolder;
+}
+#header {
+  grid-area: header;
+  background-color: rgb(235, 94, 40);
+}
+#container {
+  grid-area: container;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "graph countries countries"
+    "graph regions regions"
+    "stats stats stats"
+    "stats stats stats"
+    "stats stats stats";
+}
+
+#graphSection {
+  display: grid;
+  background-color: rgb(207, 219, 213);
+  grid-area: graph;
+  color: rgb(255, 252, 242);
+  padding: 20px;
+  font-size: 28px;
+}
+#regions {
+  background-color: rgb(232, 237, 223);
+  grid-area: regions;
+  color: rgb(36, 36, 35);
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+#countries {
+  background-color: rgb(204, 197, 185);
+  grid-area: countries;
+  color: rgb(36, 36, 35);
+  text-align: center;
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+#stats {
+  background-color: rgb(51, 53, 52);
+  grid-area: stats;
+  color: rgb(235, 94, 40);
+}
+
+#countriesContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.countryBox {
+  background-color: rgb(64, 61, 57);
+  text-align: center;
+  color: rgb(204, 197, 185);
+  margin: 5px;
+  padding: 20px;
+}
+
+#mixContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#fuelMix {
+  display: flex;
+  padding: 10px;
+}
