@@ -1,5 +1,5 @@
 const RegionInfo = ({ regionInfo }) => {
-  console.log(regionInfo.data[0].intensity.forecast);
+  console.log(regionInfo[0].data.intensity.forecast);
   return (
     <section>
       <h2>{regionInfo.shortname}</h2>
