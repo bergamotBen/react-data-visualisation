@@ -10,6 +10,6 @@ This two-day React sprint helped me learn about making API requests using Axios 
 
 ## Running the repo
 
-1. [Fork the repo.](https://github.com/bergamotBen/react-data-visualisation/fork)
+1. Clone the repo with `git clone https://github.com/bergamotBen/react-data-visualisation.git`
 2. `npm install` dependencies.
 3. `npm start` to view in the browser.
